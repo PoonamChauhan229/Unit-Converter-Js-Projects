@@ -261,7 +261,7 @@ button:hover {
   font-weight: 600;
   color: #90caf9;
 }
-
+```
 ---
 
 ### `🧠 script.js – JavaScript Functionality`
