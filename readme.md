@@ -289,23 +289,24 @@ const conversionRates = {
 - Displays the result in the designated result element with 4 decimal precision.
 
 ```
-function convert() {
-  const input = parseFloat(document.getElementById("inputValue").value);
-  const fromUnit = document.getElementById("fromUnit").value;
-  const toUnit = document.getElementById("toUnit").value;
-  const resultDiv = document.getElementById("result");
+  function convert() {
+    const input = parseFloat(document.getElementById("inputValue").value);
+    const fromUnit = document.getElementById("fromUnit").value;
+    const toUnit = document.getElementById("toUnit").value;
+    const resultDiv = document.getElementById("result");
 
-  if (isNaN(input)) {
-    resultDiv.textContent = "Please enter a valid number.";
-    return;
+    if (isNaN(input)) {
+      resultDiv.textContent = "Please enter a valid number.";
+      return;
+    }
+
+    const valueInMeters = input / conversionRates[fromUnit];
+    const convertedValue = valueInMeters * conversionRates[toUnit];
+
+    resultDiv.textContent = `Result: ${convertedValue.toFixed(4)} ${toUnit}`;
   }
-
-  const valueInMeters = input / conversionRates[fromUnit];
-  const convertedValue = valueInMeters * conversionRates[toUnit];
-
-  resultDiv.textContent = `Result: ${convertedValue.toFixed(4)} ${toUnit}`;
-}
 ```
+
 ---
 
 ### `if (isNaN(input))`
