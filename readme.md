@@ -264,7 +264,7 @@ button:hover {
 
 ---
 
-### `🧠 script.js – JavaScript Functionality `
+### `🧠 script.js – JavaScript Functionality`
 
 ### `const conversionRates = {...}`
 - This object holds the conversion rates for various units to meters.
