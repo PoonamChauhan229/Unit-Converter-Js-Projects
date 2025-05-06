@@ -256,16 +256,15 @@ button:hover {
   font-weight: 600;
   color: #90caf9;
 }
-
-```
 ---
+```
 🧠 script.js – JavaScript Functionality
 ```
 ---
-### `const conversionRates = {...}
-This object holds the conversion rates for various units to meters.
 
-Each unit is mapped to its equivalent value in meters for easy conversion.
+### `const conversionRates = {...}
+- This object holds the conversion rates for various units to meters.
+- Each unit is mapped to its equivalent value in meters for easy conversion.
 ```
 const conversionRates = {
   meter: 1,
@@ -301,9 +300,11 @@ function convert() {
 }
 ```
 ---
-### `if (isNaN(input))
+
+### `if (isNaN(input))`
 - This checks if the entered value is a valid number.
 - If not, it prompts the user to enter a valid number by displaying a message in the result section.
+
 ```
 if (isNaN(input)) {
   resultDiv.textContent = "Please enter a valid number.";
@@ -311,19 +312,20 @@ if (isNaN(input)) {
 }
 ```
 ---
+
 ### `const valueInMeters = input / conversionRates[fromUnit];`
 - This converts the input value into meters, which is the base unit for the conversion.
 - The fromUnit is used to get the correct conversion factor from the conversionRates object.
+
 ---
 
-### `const convertedValue = valueInMeters * conversionRates[toUnit];
+### `const convertedValue = valueInMeters * conversionRates[toUnit];`
 - Once the value is in meters, this line converts the value to the desired unit by multiplying with the appropriate conversion rate for the toUnit.
 
 ---
 ### `resultDiv.textContent = \Result: ${convertedValue.toFixed(4)} ${toUnit}`;`
 - Displays the result of the conversion in the resultDiv.
 - The toFixed(4) method rounds the result to 4 decimal places for precision.
-
 
 ---
 
@@ -338,13 +340,14 @@ if (isNaN(input)) {
 
 ## ✨ Features
 
-| Feature                     | Description                                          |
-|-----------------------------|------------------------------------------------------------- |
-| 🔁 Unit-to-Unit Conversion  | Converts between meters, kilometers, miles, and feet         |
-| ✍️ User Input Validation    | Ensures numeric input before performing conversions          |
+| Feature                  | Description                                                  |
+|--------------------------|--------------------------------------------------------------|
+| 🔁 Unit-to-Unit Conversion | Converts between meters, kilometers, miles, and feet         |
+| ✍️ User Input Validation   | Ensures numeric input before performing conversions          |
 | 🧮 Accurate Calculation     | Uses standard formulas for reliable conversions              |
-| 📲 Responsive Layout        |Converts between meters, kilometers, miles, and feet          |
-| 🧑‍💻 Beginner Friendly     | Simple structure for easy understanding and modification     |
+| 📲 Responsive Layout        | Adapts to different screen sizes, mobile-friendly            |
+| 🧑‍💻 Beginner Friendly       | Simple structure for easy understanding and modification      |
+
 
 ---
 
