@@ -263,7 +263,7 @@ button:hover {
 }
 ---
 
-###`🧠 script.js – JavaScript Functionality`
+### `🧠 script.js – JavaScript Functionality`
 
 ---
 
