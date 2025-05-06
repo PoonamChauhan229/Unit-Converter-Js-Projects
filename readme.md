@@ -288,7 +288,7 @@ const conversionRates = {
 - Converts the input value to meters, then applies the conversion for the desired unit.
 - Displays the result in the designated result element with 4 decimal precision.
 
-```
+```js
   function convert() {
     const input = parseFloat(document.getElementById("inputValue").value);
     const fromUnit = document.getElementById("fromUnit").value;
@@ -304,7 +304,8 @@ const conversionRates = {
     const convertedValue = valueInMeters * conversionRates[toUnit];
 
     resultDiv.textContent = `Result: ${convertedValue.toFixed(4)} ${toUnit}`;
-  }
+  };
+  
 ```
 
 ---
