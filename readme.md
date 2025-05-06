@@ -94,13 +94,18 @@ It's ideal for beginners to learn about **DOM manipulation**, **event handling**
 ```
 - A button that triggers the convert() function when clicked, performing the unit conversion.
 
+---
+
 ### `Result Display`
 ```
 <div id="result">Result: -</div>
 ```
 - A div element that will display the conversion result. Initially set to - until the conversion is performed.
 
+---
+
 ### `<script> - JavaScript File`
+
 ```
 <script src="./script.js"></script>
 ```
@@ -257,14 +262,16 @@ button:hover {
   color: #90caf9;
 }
 ---
+
 ```
-🧠 script.js – JavaScript Functionality
+#  `🧠 script.js – JavaScript Functionality`
 ```
 ---
 
-### `const conversionRates = {...}
+### `const conversionRates = {...}`
 - This object holds the conversion rates for various units to meters.
 - Each unit is mapped to its equivalent value in meters for easy conversion.
+
 ```
 const conversionRates = {
   meter: 1,
@@ -274,7 +281,7 @@ const conversionRates = {
 };
 ```
 ---
-### `function convert()
+### `function convert()` 
 - Purpose: This function performs the unit conversion when called.
 - Retrieves the input value, selected units, and the result element.
 - Validates the input to ensure it is a number.
