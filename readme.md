@@ -263,9 +263,8 @@ button:hover {
 }
 ---
 
-```
-#  `🧠 script.js – JavaScript Functionality`
-```
+###`🧠 script.js – JavaScript Functionality`
+
 ---
 
 ### `const conversionRates = {...}`
@@ -305,7 +304,7 @@ const conversionRates = {
 
     resultDiv.textContent = `Result: ${convertedValue.toFixed(4)} ${toUnit}`;
   };
-  
+
 ```
 
 ---
